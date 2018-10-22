@@ -1,0 +1,89 @@
+$fa-font-path: "~font-awesome/fonts";
+@import './node_modules/font-awesome/scss/_variables.scss';
+@import './node_modules/font-awesome//scss/font-awesome.scss';
+// carousel
+@import "./node_modules/slick-carousel/slick/slick.scss";
+@import "./node_modules/slick-carousel/slick/slick-theme.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "./colors";
+@import "./normalize";
+@import "./_variables";
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./homepage";
+@import "./why-flo";
+@import "./products";
+// pages
+@import "./contact-us";
+@import "./origin";
+@import "./careers";
+@import "./our-product-page";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.shifted {
+    .container-fluid {
+        width: calc(100% - 35px);
+        margin-right: 0;
+    }
+}
+
+header {
+    &.main-header {
+        nav {
+            padding-left: 65px;
+            li {
+                float: left;
+                padding-right: 40px;
+                a {
+                    color: $white;
+                    font-weight: 300;
+                }
+                &:last-child {
+                    padding-right: 0;
+                    float: right
+                }
+            }
+        }
+    }
+    &.internal {
+        height: 480px;
+        background: #000;
+        text-align: center;
+        h2 {
+            color:#fff;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top: 120px;
+            letter-spacing: .5px
+        }
+    }
+}
+.social-media {
+    width: 100%;
+    margin: 0;
+    > div {
+        width: 100%;
+        padding-top: 20px;
+        ul {
+            float: right;
+            li {
+                float: left;
+                margin-left: 20px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+

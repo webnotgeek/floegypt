@@ -1,0 +1,99 @@
+.contact-us {
+    header {
+        &.container-fluid {
+            background: url('../media/contact-us-img.jpg') no-repeat fixed center bottom;
+            background-size: cover;
+        }
+    }
+    .main-header {
+
+    }
+    .middle {
+        .details {
+            background: url('../media/contact-us-black.jpg') no-repeat #000 bottom right;
+            background-size: cover;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            > div {
+                margin: 0 auto
+            }
+            h2 {
+                font-weight: 100;
+                font-size: 21px;
+                letter-spacing: 1px;
+            }
+            ul {
+                border-top: 1px solid #fff;
+                padding-top: 45px;
+                margin-top: 35px;
+                li {
+                    font-weight: 100;
+                    font-size: 15px;
+                    margin-bottom: 50px;
+                    letter-spacing: 0.5px;
+                    &:last-child {
+                        margin-bottom: 0
+                    }
+                    &:nth-child(2) {
+                        img {
+                            transform: scale(1.15)
+                        }
+                    }
+                    img {
+                        margin-right: 50px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+        .maps {
+            padding: 0;
+        }
+    }
+}
+
+.contact-form {
+    text-align: center;
+    padding-bottom: 90px;
+    h3 {
+        font-size: 21px;
+        padding: 50px 0;
+        font-weight: 400;
+    }
+    .form {
+        input {
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 15px;
+            font-weight: 300;
+            font-size: 13px;
+            border:1px solid rgba(0,0,0,.4);
+        }
+        textarea {
+            border:1px solid rgba(0,0,0,.4);
+            resize: none;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 300;
+            width: 100%;
+            height: 218px
+        }
+        .submit-btn {
+            button {
+                background: #037ABA;
+                color: #fff;
+                border: none;
+                padding: 9px 40px 9px 40px;
+                font-weight: 300;
+                letter-spacing: .5px;
+                float: right;
+                margin-top: 30px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+
+            }    
+        }
+    }
+
+}

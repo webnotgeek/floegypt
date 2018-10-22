@@ -1,0 +1,35 @@
+.our-product {
+    background: #F8F8F8;
+    header {
+        &.container-fluid {
+            background: url('../media/our-product-bg.jpg') no-repeat left bottom;
+            background-size: cover;
+            height: 740px
+        }
+    }
+    .content {
+        width: calc(100% - 80px)!important;
+        // left part
+        .left {
+            padding-right: 0;
+            .first-box {
+                background: #fff;
+                padding: 90px 50px;
+                margin-top: -200px;
+                margin-bottom: 100px;
+                box-shadow: 0 19px 75px rgba(0,0,0,0.08)
+            }
+        }
+        // right part
+        .right {
+            padding-left: 0;
+            .first-box {
+                background: #fff;
+                margin-top: -235px;
+                padding: 90px 50px;
+                box-shadow: -31px -7px 80px rgba(0,0,0,0.08);
+                min-height: 1000px
+            }
+        }
+    }
+}
