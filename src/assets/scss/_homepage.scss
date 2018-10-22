@@ -2,12 +2,28 @@
     header {
         &.container-fluid {
             background: #000;
-            padding: 30px 0 60px 0;
+            padding: 30px 0 30px 0;
+            position: relative;
+            z-index: 20;
         }
     }
 }
 
 .main-header {
+    .video {
+        text-align: center;
+        background: #f8f8f8;
+        margin-bottom: 40px;
+        video {
+            width: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+            margin-top: -50px;
+            height: calc(100vh - 100px);
+        }
+    }
     .left {
         h2 {
             font-size: 33px;

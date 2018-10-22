@@ -67,7 +67,7 @@ const config = {
       //file loader
       //file-loader(for images)
       {
-        test: /\.(jpeg|jpg|png|gif|svg)$/,
+        test: /\.(jpeg|jpg|png|gif|svg|)$/,
         use: [
           {
             loader: "file-loader",
@@ -82,6 +82,18 @@ const config = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ["file-loader"]
+      },
+      // video loader
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }  
+          }
+        ]
       },
       // Bootstrap 4
       {
